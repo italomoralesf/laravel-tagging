@@ -16,6 +16,12 @@ Package based on rtconner/laravel-tagging
 composer require rtconner/laravel-tagging "~2.2"
 ```
 
+***Modified package***
+
+```shell
+composer require italomoralesf/laravel-tagging
+```
+
 #### Install and then Run the migrations
 
 The service provider does not load on every page load, so it should not slow down your app. In `config/app.php` You may add the the `TaggingServiceProvider` in the providers array as follows:
