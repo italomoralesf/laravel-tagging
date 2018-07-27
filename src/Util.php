@@ -183,7 +183,6 @@ class Util implements TaggingUtility
 			$tag = new $model;
 			$tag->name = $tagString;
 			$tag->slug = $tagSlug;
-			$tag->suggest = false;
 			$tag->save();
 		}
 		
@@ -216,7 +215,6 @@ class Util implements TaggingUtility
 	
 	/**
 	 * Look at the tags table and delete any tags that are no londer in use by any taggable database rows.
-	 * Does not delete tags where 'suggest' is true
 	 *
 	 * @return int
 	 */

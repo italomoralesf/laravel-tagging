@@ -10,6 +10,8 @@ Package based on rtconner/laravel-tagging
 
 #### Composer Install (for Laravel 5+)
 
+***Original***
+
 ```shell
 composer require rtconner/laravel-tagging "~2.2"
 ```
