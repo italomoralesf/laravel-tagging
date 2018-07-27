@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model as Eloquent;
  */
 class Tagged extends Eloquent
 {
-	
+	protected $table = 'taggables';
 	public $timestamps = false;
 	protected $fillable = ['tag_name', 'tag_slug'];
 	protected $taggingUtility;
