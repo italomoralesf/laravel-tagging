@@ -1,6 +1,6 @@
 <?php
 
-use Conner\Tagging\Model\Tag;
+use Italomoralesf\Tagging\Model\Tag;
 
 class TagTest extends TestCase
 {

@@ -6,8 +6,8 @@ You'll need to create your own service provider. It should look something like t
 ```php
 namespace My\Project\Providers;
 
-use Conner\Tagging\Providers\TaggingServiceProvider as ServiceProvider;
-use Conner\Tagging\Contracts\TaggingUtility;
+use Italomoralesf\Tagging\Providers\TaggingServiceProvider as ServiceProvider;
+use Italomoralesf\Tagging\Contracts\TaggingUtility;
 
 class TaggingServiceProvider extends ServiceProvider {
 
@@ -26,4 +26,4 @@ class TaggingServiceProvider extends ServiceProvider {
 }
 ```
 
-Where `MyNewUtilClass` is a class you have written. Your new Util class obviously needs to implement the `Conner\Tagging\Contracts\TaggingUtility` interface.
+Where `MyNewUtilClass` is a class you have written. Your new Util class obviously needs to implement the `Italomoralesf\Tagging\Contracts\TaggingUtility` interface.

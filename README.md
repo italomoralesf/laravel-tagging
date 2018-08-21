@@ -30,19 +30,19 @@ The service provider does not load on every page load, so it should not slow dow
 
 ```php
 'providers' => [
-	\Conner\Tagging\Providers\TaggingServiceProvider::class,
+	Italomoralesf\Tagging\Providers\TaggingServiceProvider::class,
 ];
 ```
 Then publish the configurations and migrations by:
 ```bash
-php artisan vendor:publish --provider="Conner\Tagging\Providers\TaggingServiceProvider"
+php artisan vendor:publish --provider="Italomoralesf\Tagging\Providers\TaggingServiceProvider"
 php artisan migrate
 ```
 
 #### Setup your models
 ```php
 class Article extends \Illuminate\Database\Eloquent\Model {
-	use \Conner\Tagging\Taggable;
+	use \Italomoralesf\Tagging\Taggable;
 }
 ```
 
@@ -70,7 +70,7 @@ Article::withAllTags(['Gardening', 'Cooking'])->get(); // only fetch articles wi
 
 Article::withoutTags(['Gardening', 'Cooking'])->get(); // only fetch articles without all tags listed
 
-Conner\Tagging\Model\Tag::where('count', '>', 2)->get(); // return all tags used more than twice
+Italomoralesf\Tagging\Model\Tag::where('count', '>', 2)->get(); // return all tags used more than twice
 
 Article::existingTags(); // return collection of all existing tags on any articles
 ```

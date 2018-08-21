@@ -24,7 +24,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Conner\\Tagging\\": "src/"
+            "Italomoralesf\\Tagging\\": "src/"
         }
     },
     "autoload-dev": {
@@ -35,7 +35,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Conner\\Tagging\\Providers\\TaggingServiceProvider"
+                "Italomoralesf\\Tagging\\Providers\\TaggingServiceProvider"
             ]
         }
     }

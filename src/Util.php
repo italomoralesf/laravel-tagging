@@ -1,6 +1,6 @@
-<?php namespace Conner\Tagging;
+<?php namespace Italomoralesf\Tagging;
 
-use Conner\Tagging\Contracts\TaggingUtility;
+use Italomoralesf\Tagging\Contracts\TaggingUtility;
 
 /**
  * Utility functions to help with various tagging functionality.
@@ -229,6 +229,6 @@ class Util implements TaggingUtility
 	 */
 	public function tagModelString()
 	{
-		return config('tagging.tag_model', '\Conner\Tagging\Model\Tag');
+		return config('tagging.tag_model', '\Italomoralesf\Tagging\Model\Tag');
 	}
 }

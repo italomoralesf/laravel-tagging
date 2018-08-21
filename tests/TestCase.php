@@ -1,6 +1,6 @@
 <?php
 
-use Conner\Tagging\Providers\TaggingServiceProvider;
+use Italomoralesf\Tagging\Providers\TaggingServiceProvider;
 
 abstract class TestCase extends Orchestra\Testbench\TestCase
 {

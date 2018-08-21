@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Eloquent\Model as Eloquent;
-use Conner\Tagging\Taggable;
+use Italomoralesf\Tagging\Taggable;
 use Illuminate\Database\Capsule\Manager as DB;
 
 class CommonUsageTest extends TestCase

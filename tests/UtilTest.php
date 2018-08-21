@@ -1,6 +1,6 @@
 <?php
 
-use Conner\Tagging\Util;
+use Italomoralesf\Tagging\Util;
 
 class UtilTest extends TestCase
 {

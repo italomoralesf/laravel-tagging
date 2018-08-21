@@ -1,6 +1,6 @@
-<?php namespace Conner\Tagging\Model;
+<?php namespace Italomoralesf\Tagging\Model;
 
-use Conner\Tagging\Contracts\TaggingUtility;
+use Italomoralesf\Tagging\Contracts\TaggingUtility;
 use Illuminate\Database\Eloquent\Model as Eloquent;
 
 /**

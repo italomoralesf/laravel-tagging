@@ -1,10 +1,10 @@
 <?php
 
-namespace Conner\Tagging\Providers;
+namespace Italomoralesf\Tagging\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Conner\Tagging\Contracts\TaggingUtility;
-use Conner\Tagging\Util;
+use Italomoralesf\Tagging\Contracts\TaggingUtility;
+use Italomoralesf\Tagging\Util;
 
 /**
  * Copyright (C) 2014 Robert Conner

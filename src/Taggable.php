@@ -1,11 +1,11 @@
 <?php
 
-namespace Conner\Tagging;
+namespace Italomoralesf\Tagging;
 
-use Conner\Tagging\Contracts\TaggingUtility;
-use Conner\Tagging\Events\TagAdded;
-use Conner\Tagging\Events\TagRemoved;
-use Conner\Tagging\Model\Tagged;
+use Italomoralesf\Tagging\Contracts\TaggingUtility;
+use Italomoralesf\Tagging\Events\TagAdded;
+use Italomoralesf\Tagging\Events\TagRemoved;
+use Italomoralesf\Tagging\Model\Tagged;
 use Illuminate\Database\Eloquent\Collection;
 
 /**
@@ -13,7 +13,7 @@ use Illuminate\Database\Eloquent\Collection;
  */
 trait Taggable
 {
-	/** @var \Conner\Tagging\Contracts\TaggingUtility **/
+	/** @var \Italomoralesf\Tagging\Contracts\TaggingUtility **/
 	static $taggingUtility;
 
     /**
@@ -59,7 +59,7 @@ trait Taggable
 	 */
 	public function tagged()
 	{
-		return $this->morphMany(config('tagging.tagged_model', 'Conner\Tagging\Model\Tagged'), 'taggable')->with('tag');
+		return $this->morphMany(config('tagging.tagged_model', 'Italomoralesf\Tagging\Model\Tagged'), 'taggable')->with('tag');
 	}
 
 	/**
